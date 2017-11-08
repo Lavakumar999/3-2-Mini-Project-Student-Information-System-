@@ -1,0 +1,79 @@
+#logout{
+                   float:right;
+                   background-color: #4cAF50;
+                   border: none;
+                   color:white;
+                   padding: 0.75%;
+                   text-align: center;
+                   text-decoration: none;
+                   display: inline-block;
+                   font-size: 14px;
+                   font-weight: bold;
+                   border-radius:5%;
+}
+#logout:hover{
+    background-color: #3e8e41;
+}
+#logout:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform:translateY(4px);
+}
+#adminmenu ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    position: fixed;  
+}
+#adminmenu li {
+    background: -webkit-linear-gradient(right,#0080c0,#F2B895); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right,#0080c0,#F2B895); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right,#0080c0, #F2B895); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left,#0080c0, #F2B895); /* Standard syntax */
+list-style-type:none;
+display:block;
+margin-top:2px;
+padding:5px;
+border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+#adminmenu a{
+     text-decoration: none;
+     display: block;
+     color:#000;
+     font-weight:bold;
+     text-align: center;
+}
+#adminmenu a:hover{
+    color:#f2f2f2;
+}
+
+.leftsidebar{
+    border-radius: 4px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+background: #0080c0; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right,#0080c0, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right,#0080c0, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right,#0080c0, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left,#0080c0, white); /* Standard syntax */
+float:left;
+margin-bottom: 1%;
+font-family: initial;
+display: block;
+width:88%;
+
+}
+#leftside{
+    float:left;
+    width:25%;
+}
+#frames_align{
+    margin-top: 0.5%;
+    margin-left: 5%;
+    float:left;
+    
+    border: 2px solid grey;
+    display: none;
+    border-radius: 5px;
+}

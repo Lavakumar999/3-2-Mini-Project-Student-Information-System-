@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/cssStu_menu.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="javascript/jquery.min.js"></script>
+  <script src="javascript/bootstrap.min.js"></script>
+  <title>Student Information</title>
+  <style type="text/css">
+      #body{
+          background-color: #122b40;
+      }
+      iframe{
+        width:70%;
+        height:800px;
+      }
+  </style>
+</head>
+<body id="body">
+<!--<img id="banner" src="images/banner.jpg" style="width:100%; height: 170px;" />-->
+<div class="container">
+  <h2 id="h2tag">Student Information Can Be Viewed Here</h2>
+  <ul class="nav nav-tabs" id="ulfont">
+    <li class="active"><a href="index.jsp">Home</a></li>
+    <li><a href="#menu1">Student personal Information</a></li>
+    <li><a href="#menu2">Student Regularity</a></li>
+    <li><a href="#menu3">Student Results</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>Welcome</h3>
+      <p> To Anil Neerylonda Institute of Technologies and Sciences</p>
+      <p>Here in this website contains all the students information along with some until know ,along with attendance percentage , results and number of backlogs if any </p>  
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Student personal Information Displayed Here</h3>
+      <center><form class="form-inline" action="student_information/select_perinfo.jsp" method="post" target="iframe1">
+            <div class="form-group">
+              <label for="roll">Enter Roll No:</label>
+              <input type="text" class="form-control" id="roll" name="rollno" placeholder="Enter your rollno" maxlength="12" required>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </center>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Student Regularity</h3>
+      <center><p><b>***********Update Soon*************</b></p></center>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Student Results</h3>
+      <center><form class="form-inline" action="student_information/select_result.jsp" method="post" target="iframe1">
+              <div class="form-group">
+              <label for="roll">Enter Roll No:</label>
+              <input type="text" class="form-control" id="roll" name="rollno" placeholder="Enter your rollno" maxlength="12" required>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </center>
+    </div>
+  </div>
+</div>
+ <div id="iframe_div">
+    <center>
+      <iframe id="frames_align"  name="iframe1" frameborder="0" allowfullscreen ></iframe>
+    </center>
+</div>
+<script>
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+});
+</script>
+
+</body>
+</html>

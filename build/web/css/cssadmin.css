@@ -1,0 +1,31 @@
+#body{
+    padding:0;
+    marginn:0;
+    background-image: url(../images/navyblue.jpg);
+    background-repeat: no-repeat;
+     background-size: 100% 100%;
+     height:1400px;
+}
+.navbar-brand{
+    display: none;
+}
+iframe{
+    width:80%;
+    height:1200px;
+}
+@media only screen and (min-width: 150px) and (max-width: 800px){
+   .navbar-brand{
+    display: block;
+    text-align: center;
+} 
+.navbar-nav ul li a {
+ text-align: center;
+ display: block;
+}
+.navbar-nav ul li a:hover{
+    background-color: #fff;
+}
+#submit{
+    width:100%;
+}
+}
